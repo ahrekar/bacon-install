@@ -8,5 +8,6 @@
         <p>${post.title}</p>
         <p>By ${post.user.userId}, ${post.dateCreated}</p>
         <p>${post.content}</p>
+		%{-- <p><g:each var="tag" in="${post.tags}"> </g:each> --}%
     </div>
 </g:each>
