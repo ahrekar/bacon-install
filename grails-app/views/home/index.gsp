@@ -1,6 +1,6 @@
 <g:form action="index">
-<label for="author">Author:</label>
-<g:textField name="author" />
+<label for="contentSearch">Search for Content:</label>
+<g:textField name="searchQuery" />
 <g:submitButton name="search" value="Search" />
 </g:form>
 <g:each var="post" in="${posts}">
