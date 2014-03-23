@@ -8,6 +8,13 @@
         <p>${post.title}</p>
         <p>By ${post.user.userId}, ${post.dateCreated}</p>
         <p>${post.content}</p>
-		%{-- <p><g:each var="tag" in="${post.tags}"> </g:each> --}%
+		<p>
+			tags: 
+			<g:each var="tag" in="${post.tags}">
+				${tag}, 
+			</g:each>
+		</p>
+		%{-- <p>${post.tags}</p> --}%
+		%{-- <p><g:each var="tag" in="${Tag.findByPost(post)}"> </g:each> --}%
     </div>
 </g:each>

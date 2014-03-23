@@ -10,5 +10,10 @@ class Tag {
     static hasMany = [ posts : Post ]
 
     static belongsTo = [ User, Post ]
+
+    String toString() {
+        return name
+        //return content
+    }
 }
 

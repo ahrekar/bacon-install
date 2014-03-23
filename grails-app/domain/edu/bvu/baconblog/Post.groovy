@@ -11,6 +11,7 @@ class Post {
     }
 
     static belongsTo = [ user : User ]     // User-to-Posts
+	static hasMany = [ tags : Tag ]
 
     static mapping = {
         sort dateCreated: "desc"
@@ -21,4 +22,3 @@ class Post {
         //return content
     }
 }
-
