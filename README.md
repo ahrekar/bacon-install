@@ -5,18 +5,18 @@ The bacon blog assignment for UI Design
 
 Here is a list of the requirements for the assignment:
 
-XXXXXXX1. When you visit http://localhost:8080/baconblog, 
+1. XXXXXXXXXXXXXXXXWhen you visit http://localhost:8080/baconblog, 
 	you will land on a home page with the most recent blog posts.
 	The posts should be in sorted order by their date of creation 
 	(newest post at the top of the page).  This home page
 	shall be referred to as the “post list” page in the 
 	requirements that follow. 
 
-XXXXXXX2. Each post should have a title, the user ID who created 
+2. XXXXXXXXXXXXXEach post should have a title, the user ID who created 
 	the post, the date the post was created, any tags the post 
 	has, and the post content itself. 
 
-3. The post list page should have a search box.  Once 
+3. XXXXXXXXXXXXXThe post list page should have a search box.  Once 
 	the user uses the search box, the post list page should 
 	display any posts whose content matches the search query.  This 
 	includes all matches to post content, post tags, or post user ID.  
