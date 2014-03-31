@@ -11,19 +11,23 @@ h1 {
 }
 .title {
 	color:#660099;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight:bold;
 }
 header {
+	vertical-align:middle;
 	width:auto;
 	height:100px;
 	background-color:#0000000;
 }
 .search {
+	padding-top:50px;
 	float:right;
 	height:100px;
-	margin-top:auto;
-	margin-bottom:auto;
+  	display: inline-block;
+}
+.postInfo {
+	font-size: 12px;
 }
 </style>
 </head>
@@ -40,15 +44,15 @@ header {
 <g:each var="post" in="${posts}">
     <div style="padding: 3px; border: 1px solid black;">
         <p class="title">${post.title}</p>
-        <p>By ${post.user.userId}, ${post.dateCreated}</p>
+        <p class="postInfo">By ${post.user.userId}, ${post.dateCreated}</p>
         <p>${post.content}</p>
-		<p>
+		<p class="postInfo">
 			tags: 
 			<g:each var="tag" in="${post.tags}">
 				${tag}, 
 			</g:each>
 		</p>
-		%{-- <p>${post.tags}</p> --}%
-		%{-- <p><g:each var="tag" in="${Tag.findByPost(post)}"> </g:each> --}%
+		%{-- <p class="postInfo">${post.tags}</p> --}%
+		%{-- <p class="postInfo"><g:each var="tag" in="${Tag.findByPost(post)}"> </g:each> --}%
     </div>
 </g:each>
