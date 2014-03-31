@@ -49,10 +49,8 @@ header {
 		<p class="postInfo">
 			tags: 
 			<g:each var="tag" in="${post.tags}">
-				${tag}, 
+				<a href="#tag=${tag}">${tag}</a>, 
 			</g:each>
 		</p>
-		%{-- <p class="postInfo">${post.tags}</p> --}%
-		%{-- <p class="postInfo"><g:each var="tag" in="${Tag.findByPost(post)}"> </g:each> --}%
     </div>
 </g:each>
