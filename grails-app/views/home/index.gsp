@@ -1,4 +1,3 @@
-
 <g:form action="index">
 <head>
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'index.css')}" type="text/css">
@@ -6,7 +5,6 @@
 
 <header>
 <h1>Bacon Blog</h1>
-<p name="tagsorting"> ${params.tagsorting} </p> 
 <div class="search">
 <label for="contentSearch">Search for Content:</label>
 <g:textField name="searchQuery" />
@@ -15,6 +13,7 @@
 </header>
 
 </g:form>
+
 <body>
 <g:each var="post" in="${posts}">
     <div class="post">
