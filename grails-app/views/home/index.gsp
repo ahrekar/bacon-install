@@ -16,9 +16,10 @@
 <body>
 <g:each var="post" in="${posts}">
     <div class="post">
+        <img src = "http://ec.l.thumbs.canstockphoto.com/canstock14029099.jpg" align = "left" width = "51" height = "75"/>
         <p class="title">${post.title}</p>
         <p class="postInfo">By ${post.user.userId}, ${post.dateCreated}</p>
-        <p>${post.content}</p>
+        <p class="content">${post.content}</p>
 		<p class="postInfo">
 			tags: 
 			<g:each var="tag" in="${post.tags}">
