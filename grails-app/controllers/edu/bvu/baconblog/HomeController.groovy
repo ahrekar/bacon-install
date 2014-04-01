@@ -1,6 +1,7 @@
 package edu.bvu.baconblog
 
 class HomeController {
+
     def index() {
         def postList = [] 
 		def posts = []
@@ -39,6 +40,10 @@ class HomeController {
         } else {
             posts = Post.findAll()
         }
+		if (params.sortTag){
+			posts = []
+		}
         [ posts : posts ]
     }
+
 }
