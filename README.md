@@ -34,14 +34,14 @@ Here is a list of the requirements for the assignment:
 	Eventually (not part of this assignment), we will add the 
 	ability to upload and display photos. 
 
-7. Anywhere a tag appears (either on the user profile page or 
+7. XXXXXXXXXXXXXAnywhere a tag appears (either on the user profile page or 
 	on the post list page), the tag should be a link that filters 
 	the post list page such that the page will only show posts 
 	with that tag.  Also, the page should provide some form 
 	of appropriate feedback that the posts are being filtered 
 	using that particular tag. 
 
-8. Only one tag may be used to filter the posts at a time. 
+8. XXXXXXXXXXXXXXOnly one tag may be used to filter the posts at a time. 
 
 9. All pages must have the same look-and-feel (e.g., common 
 	header/footer/colors, etc.). 
