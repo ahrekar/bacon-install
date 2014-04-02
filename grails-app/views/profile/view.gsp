@@ -15,12 +15,15 @@
 </g:form>
 
 <body>
-
+<div id="profileInfo">
 <img src = "http://ec.l.thumbs.canstockphoto.com/canstock14029099.jpg" align = "left" width = "51" height = "75"/>
-<h2>User name: ${user.userId}</h2>
-<h2>Full name: ${user.profile.fullname}</h2>
-<h2>email:<a href="mailto:${user.profile.email}">${user.profile.email}</a></h2>
-<h2>webaddress:<a href="${user.profile.webaddress}">${user.profile.webaddress}</a></h2>
-<h2>country: ${user.profile.country}</h2>
-<h2>bio: ${user.profile.bio}</h2>
+	<div id="info">
+	<h2>User name: ${user.userId}</h2>
+	<h2>Full name: ${user.profile.fullname}</h2>
+	<h2>email:<a href="mailto:${user.profile.email}">${user.profile.email}</a></h2>
+	<h2>webaddress:<a href="${user.profile.webaddress}">${user.profile.webaddress}</a></h2>
+	<h2>country: ${user.profile.country}</h2>
+	<h2>bio: ${user.profile.bio}</h2>
+	</div>
+</div>
 </body>

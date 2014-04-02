@@ -47,6 +47,25 @@ header {
 	border-bottom: 15px solid #9966CC;
 	background-color: #330066;
 }
+#profileInfo {
+	color:white;
+	width:500px;
+	height:400px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 20px; 
+	padding-left:50px;
+	padding-right:50px;
+	border-bottom: 15px solid #9966CC;
+	background-color: #330066;
+}
+#profileInfo img{
+	float:left;
+}
+#info{
+	float:right;
+	width: 400px;
+}
 a:link {
 	color:#99BBCC;	
 }
