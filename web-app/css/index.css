@@ -53,3 +53,8 @@ a:link {
 a:visited {
 	color:#9966CC;	
 }
+.extraInfo {
+	margin-left:auto;
+	margin-right:auto;
+	width:600px;
+}

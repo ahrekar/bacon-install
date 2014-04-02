@@ -14,18 +14,23 @@
 
 </g:form>
 
+
 <body>
+<div class="extraInfo">
+<g:if test="${params.tag}">
+	filtering by <a class="postInfo">${params.tag}</a> tag
+</g:if>
+</div>
 <g:each var="post" in="${posts}">
     <div class="post">
         <img src = "http://ec.l.thumbs.canstockphoto.com/canstock14029099.jpg" align = "left" width = "51" height = "75"/>
-        
         <p class="title">${post.title}</p>
         <p class="postInfo">By <g:link controller="profile" action="view" params="[user:post.user.userId]" >${post.user.userId}</g:link>, ${post.dateCreated}</p>
         <p class="content">${post.content}</p>
 		<p class="postInfo">
 			tags: 
 			<g:each var="tag" in="${post.tags}">
-				<g:link controller="home" action="index" sortTag="${tag}">${tag}</g:link>, 
+				<g:link controller="home" action="index" params="[tag:tag]">${tag}</g:link>, 
 			</g:each>
 		</p>
     </div>

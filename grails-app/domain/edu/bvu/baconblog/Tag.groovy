@@ -15,5 +15,9 @@ class Tag {
         return name
         //return content
     }
+
+	static mapping = {
+		sort "name"
+	}
 }
 

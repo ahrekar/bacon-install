@@ -6,7 +6,10 @@ class HomeController {
         def postList = [] 
 		def posts = []
 
-        if (params.searchQuery) {
+        if (params.tag){
+			Tag tag = Tag.findByName(params.tag)
+			posts.addAll(tag.posts)
+		} else if (params.searchQuery) {
 
             User user = User.findByUserIdIlike(params.searchQuery)
 			Tag tag = Tag.findByNameIlike(params.searchQuery)
@@ -40,10 +43,7 @@ class HomeController {
         } else {
             posts = Post.findAll()
         }
-		if (params.sortTag){
-			posts = []
-		}
+		
         [ posts : posts ]
     }
-
 }
