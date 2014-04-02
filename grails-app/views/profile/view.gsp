@@ -4,7 +4,7 @@
 </head>
 
 <header>
-<h1>Bacon Blog</h1>
+<g:link url="/baconblog/home/index"><h1>Bacon Blog</h1> </g:link>
 <div class="search">
 <label for="contentSearch">Search for Content:</label>
 <g:textField name="searchQuery" />
