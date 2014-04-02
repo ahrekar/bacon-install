@@ -20,7 +20,7 @@
         <img src = "http://ec.l.thumbs.canstockphoto.com/canstock14029099.jpg" align = "left" width = "51" height = "75"/>
         
         <p class="title">${post.title}</p>
-        <p class="postInfo">By ${post.user.userId}, ${post.dateCreated}</p>
+        <p class="postInfo">By <g:link controller="profile" action="view" params="[user:post.user.userId]" >${post.user.userId}</g:link>, ${post.dateCreated}</p>
         <p class="content">${post.content}</p>
 		<p class="postInfo">
 			tags: 

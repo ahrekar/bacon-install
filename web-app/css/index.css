@@ -47,3 +47,9 @@ header {
 	border-bottom: 15px solid #9966CC;
 	background-color: #330066;
 }
+a:link {
+	color:#99BBCC;	
+}
+a:visited {
+	color:#9966CC;	
+}
