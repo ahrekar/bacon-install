@@ -15,6 +15,14 @@ class ProfileController {
         respond Profile.list(params), model:[profileInstanceCount: Profile.count()]
     }
 
+	def view(){
+		def user
+		if (params.user)
+			user = User.findByUserId(params.user)
+
+		[ user : user ] 
+	}
+
     def show(Profile profileInstance) {
         respond profileInstance
     }

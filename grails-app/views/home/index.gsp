@@ -4,7 +4,7 @@
 </head>
 
 <header>
-<h1>Bacon Blog</h1>
+<g:link url="/baconblog/home/index"><h1>Bacon Blog</h1> </g:link>
 <div class="search">
 <label for="contentSearch">Search for Content:</label>
 <g:textField name="searchQuery" />
@@ -13,18 +13,24 @@
 </header>
 
 </g:form>
+
+
 <body>
+<div class="extraInfo">
+<g:if test="${params.tag}">
+	filtering by <a class="postInfo">${params.tag}</a> tag
+</g:if>
+</div>
 <g:each var="post" in="${posts}">
     <div class="post">
         <img src = "http://ec.l.thumbs.canstockphoto.com/canstock14029099.jpg" align = "left" width = "51" height = "75"/>
-        
         <p class="title">${post.title}</p>
-        <p class="postInfo">By ${post.user.userId}, ${post.dateCreated}</p>
+        <p class="postInfo">By <g:link controller="profile" action="view" params="[user:post.user.userId]" >${post.user.userId}</g:link>, ${post.dateCreated}</p>
         <p class="content">${post.content}</p>
 		<p class="postInfo">
 			tags: 
 			<g:each var="tag" in="${post.tags}">
-				<a href="#tag=${tag}">${tag}</a>, 
+				<g:link controller="home" action="index" params="[tag:tag]">${tag}</g:link>, 
 			</g:each>
 		</p>
     </div>

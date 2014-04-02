@@ -21,7 +21,7 @@ body {
 header {
 	margin-left:auto;
 	margin-right:auto;
-	width:680px;
+	width:800px;
 	height:100px;
 	background-color:#663366;
 }
@@ -46,4 +46,15 @@ header {
 	padding-right:50px;
 	border-bottom: 15px solid #9966CC;
 	background-color: #330066;
+}
+a:link {
+	color:#99BBCC;	
+}
+a:visited {
+	color:#9966CC;	
+}
+.extraInfo {
+	margin-left:auto;
+	margin-right:auto;
+	width:600px;
 }

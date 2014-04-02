@@ -21,27 +21,27 @@ Here is a list of the requirements for the assignment:
 	display any posts whose content matches the search query.  This 
 	includes all matches to post content, post tags, or post user ID.  
 
-4. Anywhere a user ID appears, the user ID should be a 
+4. XXXXXXXXXXXXXAnywhere a user ID appears, the user ID should be a 
 	link to a user profile page. 
 
-5. The user profile page should include all information in 
+5. XXXXXXXXXXXXXThe user profile page should include all information in 
 	the Profile class.  Any email addresses or Web URL’s should 
 	be working links. 
 
-6. The user profile page should show a default “anonymous” photo 
+6. XXXXXXXXXXXXXThe user profile page should show a default “anonymous” photo 
 	(much like Facebook blue silhouette or the Twitter “egg” 
 	avatar).  For now, we will only display a default photo.  
 	Eventually (not part of this assignment), we will add the 
 	ability to upload and display photos. 
 
-7. Anywhere a tag appears (either on the user profile page or 
+7. XXXXXXXXXXXXXAnywhere a tag appears (either on the user profile page or 
 	on the post list page), the tag should be a link that filters 
 	the post list page such that the page will only show posts 
 	with that tag.  Also, the page should provide some form 
 	of appropriate feedback that the posts are being filtered 
 	using that particular tag. 
 
-8. Only one tag may be used to filter the posts at a time. 
+8. XXXXXXXXXXXXXXOnly one tag may be used to filter the posts at a time. 
 
 9. All pages must have the same look-and-feel (e.g., common 
 	header/footer/colors, etc.). 
