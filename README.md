@@ -21,14 +21,14 @@ Here is a list of the requirements for the assignment:
 	display any posts whose content matches the search query.  This 
 	includes all matches to post content, post tags, or post user ID.  
 
-4. Anywhere a user ID appears, the user ID should be a 
+4. XXXXXXXXXXXXXAnywhere a user ID appears, the user ID should be a 
 	link to a user profile page. 
 
-5. The user profile page should include all information in 
+5. XXXXXXXXXXXXXThe user profile page should include all information in 
 	the Profile class.  Any email addresses or Web URL’s should 
 	be working links. 
 
-6. The user profile page should show a default “anonymous” photo 
+6. XXXXXXXXXXXXXThe user profile page should show a default “anonymous” photo 
 	(much like Facebook blue silhouette or the Twitter “egg” 
 	avatar).  For now, we will only display a default photo.  
 	Eventually (not part of this assignment), we will add the 

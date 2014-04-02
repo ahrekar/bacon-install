@@ -16,6 +16,7 @@
 
 <body>
 
+<img src = "http://ec.l.thumbs.canstockphoto.com/canstock14029099.jpg" align = "left" width = "51" height = "75"/>
 <h2>User name: ${user.userId}</h2>
 <h2>Full name: ${user.profile.fullname}</h2>
 <h2>email:<a href="mailto:${user.profile.email}">${user.profile.email}</a></h2>
